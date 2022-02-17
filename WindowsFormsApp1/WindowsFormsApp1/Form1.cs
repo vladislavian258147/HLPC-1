@@ -12,9 +12,16 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        int i = 0;
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            i++;
+            label1.Text = "Кнопка нажата " + i + " раз";
         }
     }
 }
